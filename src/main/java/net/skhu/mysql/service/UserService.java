@@ -1,5 +1,10 @@
 package net.skhu.mysql.service;
 
-public interface UserService {
+import java.util.List;
 
+import net.skhu.mysql.domain.User;
+public interface UserService {
+	void inserting_user_ten_thousands();
+	List<User> findAll();
+	void deleteAll();
 }
