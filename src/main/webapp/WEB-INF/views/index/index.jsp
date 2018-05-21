@@ -92,7 +92,7 @@
                             <!--4번 프레임 시작-->
                             <div class="content">
 
-                          <img src="${R}/Cookie_frontend1/img/cookie.PNG" style="width: 100px; height: 100px;">
+                          <img src="${R}../img/cookie.PNG" style="width: 100px; height: 100px;">
                                 <center>
                                    
                                    <br/>
