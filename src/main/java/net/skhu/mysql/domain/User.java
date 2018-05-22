@@ -15,16 +15,16 @@ import lombok.Data;
 public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	long id;
+	long id; // 사용자 ID
 
 	@Column(name="userId", unique=true)
-	String loginId;
+	String loginId; // 사용자 영문 ID
 
-	String password;
-	String name;
+	String password; // 사용자 비밀번호
+	String name; // 사용자 이름
 
 	@Enumerated(EnumType.STRING)
-	UserRole role;
+	UserRole role; // 사용자 권한. 이는 Enumeration을 통해 설정한다.
 
-	String address;
+	String address; // 사용자 주소
 }

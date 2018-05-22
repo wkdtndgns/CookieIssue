@@ -7,4 +7,5 @@ public interface UserService {
 	void inserting_user_ten_thousands();
 	List<User> findAll();
 	void deleteAll();
+	User userLogin(String loginId, String password);
 }

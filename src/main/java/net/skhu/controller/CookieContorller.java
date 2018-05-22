@@ -8,28 +8,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("cookie")
 public class CookieContorller {
+	@RequestMapping("index")
+	public String Main(Model model) {
+		return "index/index";
+	}
 
-	  @RequestMapping("index")
-	    public String Main(Model model) {
+	@RequestMapping("request")
+	public String Request(Model model) {
+		return "request/request";
+	}
 
-	        return "index/index";
-	    }
+	@RequestMapping("sign")
+	public String Sign(Model model) {
 
-	    @RequestMapping("request")
-	    public String Request(Model model) {
+		return "sign/sign";
+	}
 
-	        return "request/request";
-	    }
+	@RequestMapping("login")
+	public String login(Model model) {
+		return "login/login";
+	}
 
-	    @RequestMapping("sign")
-	    public String Sign(Model model) {
-
-	        return "sign/sign";
-	    }
-
-	    @RequestMapping("login")
-	    public String login(Model model) {
-
-	        return "login/login";
-	    }
 }
