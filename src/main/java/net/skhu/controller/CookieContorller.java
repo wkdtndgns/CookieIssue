@@ -8,25 +8,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("cookie")
 public class CookieContorller {
-	@RequestMapping("index")
+	@RequestMapping("guest/index")
 	public String Main(Model model) {
 		return "index/index";
 	}
 
-	@RequestMapping("request")
+	@RequestMapping("guest/request")
 	public String Request(Model model) {
 		return "request/request";
 	}
 
-	@RequestMapping("sign")
+	@RequestMapping("guest/sign")
 	public String Sign(Model model) {
-
 		return "sign/sign";
 	}
 
-	@RequestMapping("login")
+	@RequestMapping("guest/login")
 	public String login(Model model) {
 		return "login/login";
 	}
-
 }
