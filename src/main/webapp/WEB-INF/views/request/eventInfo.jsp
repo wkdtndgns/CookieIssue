@@ -41,13 +41,24 @@
     <div class="container text-center" style="height: 10000px">
         <!--5번 프레임 시작-->
         <div class="content">
-        	<img src="${R}/img/cookie.PNG" style="width: 100px; height: 100px;">
-            <br/>
-            <br/>
-            <br/>                      
-            <button type="submit" class="btn btn-primary">
-		    	<i class="glyphicon glyphicon-ok"></i> 쿠키 발급 
-		    </button>
+        <c:forEach var="event" items="${ events }">
+            <div class="panel panel-default">
+			  <div class="panel-body"> 
+				  <div class="row">
+				    <div class="col-md-4">
+				    	<img src="${R}/img/cookie_monster.jpg" class="img-thumbnail" width="210" height="139" />
+				    </div>
+				    <div class="col-md-8">
+				    	<h1>${ event.name }</h1>
+				    	<p>${event.start} - ${event.end}</p>
+				    	<p>개인 참여 가능 횟수 : ${event.personal}</p>
+				    	<p>총 참여 가능 횟수 : ${event.total}</p>
+				    </div>
+				  </div>
+			  
+			  </div>
+			</div>
+			</c:forEach>                      
         </div>
         <!-- 5번 프레임 끝-->
 	</div>

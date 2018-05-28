@@ -24,7 +24,7 @@
 		<div class="frame">
 			<!-- 2번 프레임 시작  -->
 			<div class="menu">
-	            <%@ include file="/WEB-INF/views/menu/guest_menu.jsp" %>
+	            <%@ include file="/WEB-INF/views/menu/user_menu.jsp" %>
 			</div>
 			<!-- 2번 프레임 끝  -->
 	    </div>
