@@ -35,7 +35,6 @@
                         <center>
 
                         </center>
-
                     </div>
                     <!-- 2번 프레임 끝  -->
 
@@ -52,11 +51,10 @@
                             <div class="content">
 
                             <img src="${R}img/cookie.PNG" style="width: 100px; height: 100px;">
-                                <center>
-                                    쿠키 발급
-                                </center>
-
-
+                            <br/>
+				            <br/>
+				            <br/> 
+                            <h1>이벤트 참여를 진행하고 싶다면 로그인을 진행하세요.</h1>
                             </div>
                             <!--4번 프레임 끝-->
 

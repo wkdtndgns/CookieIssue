@@ -2,6 +2,7 @@ package net.skhu.redis.domain;
 
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.servlet.http.Cookie;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
@@ -18,5 +19,5 @@ public class EventCookie {
 	@Enumerated(EnumType.STRING)
 	EventType type; // 쿠키 처리 방식. 이는 Enumeration을 통해 설정한다.
 
-	String cookieContext; // 이벤트 정보(이벤트 이름, 참여 시각)
+	Cookie cookie; // 이벤트 정보(이벤트 이름, 참여 시각)
 }

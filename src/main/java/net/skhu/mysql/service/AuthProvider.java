@@ -39,29 +39,11 @@ public class AuthProvider implements AuthenticationProvider{
 				break;
 		}
 		grantedAuthorities.add(new SimpleGrantedAuthority(role));
-		return new MyAuth(loginId, password, grantedAuthorities, user);
+		return new UsernamePasswordAuthenticationToken(loginId, password, grantedAuthorities);
 	}
 
 	@Override
 	public boolean supports(Class<?> authentication) {
 		return authentication.equals(UsernamePasswordAuthenticationToken.class);
-	}
-
-	public class MyAuth extends UsernamePasswordAuthenticationToken{
-		private static final long serialVersionUID = 1L;
-		User user;
-
-		public MyAuth(String loginId, String passwd, List<GrantedAuthority> grantedAuthorities, User user) {
-			super(loginId, passwd, grantedAuthorities);
-			this.user = user;
-		}
-
-		public User getUser() {
-			return user;
-		}
-
-		public void setUser(User user) {
-			this.user = user;
-		}
 	}
 }
