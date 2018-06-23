@@ -26,123 +26,74 @@
     </style>
 
 <body>
-
-<center>
-                <div class="frame">
-
-
-
-
-                    <!-- 1번 프레임 시작  -->
-                    <div class="frame">
-                   		<%@ include file="/WEB-INF/views/menu/guest_menu.jsp" %>
-                   	</div>
-
-                    <!-- 1번 프레임 끝  -->
-
-                    <!-- 1번 프레임 끝  -->
-
-
-                    <!-- 2번 프레임 시작  -->
-                    <div class="header" style=" padding-top: 10px;" >
-                        <center>
-
-                        </center>
-
+	<div class="frame">
+		<!-- 1번 프레임 시작  -->
+		<div class="frame">
+			<!-- 2번 프레임 시작  -->
+			<div class="menu">
+	            <%@ include file="/WEB-INF/views/menu/guest_menu.jsp" %>
+			</div>
+			<!-- 2번 프레임 끝  -->
+	    </div>
+	    <!-- 1번 프레임 끝  -->
+	</div>
+    <!-- 3번 프레임 시작  -->
+    <div class="container" style="height: 10000px">
+    	<!--4번 프레임 시작-->
+        <div class="content">
+        	<div class="application" style="text-align: left;" >
+            	<form:form method="post" modelAttribute="signInfo">
+	                <div class="control-group">
+	                  <div class="form-group floating-label-form-group controls">
+	                    <label>이름: </label>
+	                    <input type="text" class="form-control" placeholder="이름" id="name" >
+	                    <p class="help-block text-danger"></p>
+	                  </div>
+	                </div>
+                    <br/>
+					<div class="control-group">
+                      <div class="form-group floating-label-form-group controls">
+                        <label>아이디: </label>
+                        <input type="text" class="form-control" placeholder="아이디" id="loginId" >
+                        <p class="help-block text-danger"></p>
+                      </div>
                     </div>
-                    <!-- 2번 프레임 끝  -->
-
-
-                    <!-- 3번 프레임 시작  -->
-
-                    <div class="container" style="height: 10000px">
-
-                        <center>
-
-
-
-                            <!--4번 프레임 시작-->
-                            <div class="content">
- <form class="form-inline">
-                      <div class="application" style="text-align: left;" >
-
-
-                          <form name="sentMessage" id="contactForm" novalidate>
-                            <div class="control-group">
-                              <div class="form-group floating-label-form-group controls">
-                                <label>이름: </label>
-                                <input type="text" class="form-control" placeholder="이름" id="name" >
-                                <p class="help-block text-danger"></p>
-                              </div>
-                            </div>
-
-                            <br/>
-
-
-                            <div class="control-group">
-                              <div class="form-group floating-label-form-group controls">
-                                <label>아이디: </label>
-                                <input type="text" class="form-control" placeholder="학번" id="studentNumber" >
-                                <p class="help-block text-danger"></p>
-                              </div>
-                            </div>
-
-                             <br/>
-
-
-
-                            <div class="control-group">
-                              <div class="form-group floating-label-form-group controls">
-                                <label>비밀번호:  </label>
-                                <input type="password" class="form-control" placeholder="비밀번호" id="password" >
-                                <p class="help-block text-danger"></p>
-                              </div>
-                            </div>
-
-
-                             <br/>
-
-                            <div class="control-group">
-                              <div class="form-group floating-label-form-group controls">
-                                <label>비밀번호 확인:  </label>
-                                <input type="password" class="form-control" placeholder="비밀번호" id="password2" >
-                                <p class="help-block text-danger"></p>
-                              </div>
-                            </div>
-
-
-                             <br/>
-
-                       <hr>
-
-
-
-
-
-
-      <div style="margin-top: 40px">
-        <p><h3>회원가입을 신청하시려면 밑에 신청 버튼을 눌러 주세요.</h3></p>
-
-      <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-ok"> 신청</i></button>
-      <a href="index.html"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-remove"> 취소</i></button></a>
-      </div>
-
-    </form>
-
-
-                            </div>
-                            <!--4번 프레임 끝-->
-
-
-                    </center>
-
+					<br/>
+                    <div class="control-group">
+                      <div class="form-group floating-label-form-group controls">
+                        <label>비밀번호:  </label>
+                        <input type="password" class="form-control" placeholder="비밀번호" id="password_1" >
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>        
+                    <br/>
+					<div class="control-group">
+	                    <div class="form-group floating-label-form-group controls">
+	                      <label>비밀번호 확인:  </label>
+	                      <input type="password" class="form-control" placeholder="비밀번호" id="password_2" >
+	                      <p class="help-block text-danger"></p>
+	                    </div>
                     </div>
-
-                <!-- 3번 프레임 끝  -->
-
-            </div>
-        </center>
-
-
+					<br/>
+					<div class="control-group">
+                      <div class="form-group floating-label-form-group controls">
+                        <label>주소 </label>
+                        <input type="text" class="form-control" placeholder="주소" id="address" >
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+				    <div style="margin-top: 40px">
+				        <h3>회원가입을 신청하시려면 밑에 신청 버튼을 눌러 주세요.</h3>
+					</div>
+      				<button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-ok"> 신청</i></button>
+      					<a href="index">
+      						<button type="button" class="btn btn-primary">
+      							<i class="glyphicon glyphicon-remove"> 취소</i>
+      						</button>
+    					</a>
+      			</form:form>
+      		</div>
+		</div>
+	</div>
 </body>
 </html>

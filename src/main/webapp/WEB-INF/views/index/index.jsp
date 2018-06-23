@@ -45,9 +45,7 @@
             <br/>
             <br/>
             <br/>                      
-            <button type="submit" class="btn btn-primary">
-		    	<i class="glyphicon glyphicon-ok"></i> 쿠키 발급 
-		    </button>
+            <h1>이벤트 참여를 진행하고 싶다면 로그인을 진행하세요.</h1>
         </div>
         <!-- 5번 프레임 끝-->
 	</div>

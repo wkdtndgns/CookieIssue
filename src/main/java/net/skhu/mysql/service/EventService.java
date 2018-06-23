@@ -6,4 +6,5 @@ import net.skhu.mysql.domain.Event;
 
 public interface EventService {
 	List<Event> findAll();
+	Event findOne(long id);
 }
