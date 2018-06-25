@@ -37,7 +37,6 @@
     <!-- 3번 프레임 끝  -->
 
 
-<<<<<<< HEAD
     <!-- 4번 프레임 시작  -->
     <div class="container text-center" style="height: 10000px">
         <!--5번 프레임 시작-->

@@ -1,6 +1,6 @@
 package net.skhu.redis.service;
 
-import net.skhu.domain.Count;
+import net.skhu.redis.domain.Count;
 
 
 public interface CountService {
