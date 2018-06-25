@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import net.skhu.domain.Count;
-import net.skhu.repository.CountRepository;
+import net.skhu.redis.domain.Count;
+import net.skhu.redis.repository.CountRepository;
 
 /**
  * Created by ds on 2018-04-09.

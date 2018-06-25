@@ -1,4 +1,4 @@
-package net.skhu.domain;
+package net.skhu.redis.domain;
 
 import java.io.Serializable;
 
